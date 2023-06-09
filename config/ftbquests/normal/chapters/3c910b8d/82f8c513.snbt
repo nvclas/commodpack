@@ -1,0 +1,27 @@
+{
+	title: "Geschafft!",
+	x: 8.0d,
+	y: 0.0d,
+	shape: "hexagon",
+	description: "Besiege den Ender Dragon",
+	text: [
+		"Betritt das Ende und besiege den Ender Dragon"
+	],
+	dependencies: [
+		"d2cce4cc"
+	],
+	tasks: [{
+		uid: "0d6f1a2f",
+		type: "kill",
+		icon: "minecraft:skull 1 5",
+		entity: "minecraft:ender_dragon",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "1197ef64",
+		type: "random",
+		title: "XP Reward",
+		icon: "minecraft:experience_bottle",
+		table: 0
+	}]
+}

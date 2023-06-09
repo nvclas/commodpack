@@ -1,0 +1,30 @@
+{
+	title: "Mining Session",
+	x: 2.0d,
+	y: 0.0d,
+	description: "Stelle eine Iron Pickaxe her",
+	text: [
+		"Finde oder stelle eine Iron Pickaxe her"
+	],
+	dependencies: [
+		"60191a39"
+	],
+	tasks: [{
+		uid: "561f1280",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a3bbca3a",
+		type: "item",
+		item: "minecraft:coal",
+		count: 8
+	}]
+}

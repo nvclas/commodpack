@@ -1,0 +1,28 @@
+{
+	title: "Endspurt",
+	x: 6.0d,
+	y: 0.0d,
+	description: "Betritt das End",
+	text: [
+		"Aktiviere das End Portal und betritt das End"
+	],
+	dependencies: [
+		"f41179cc"
+	],
+	tasks: [{
+		uid: "151515f8",
+		type: "dimension",
+		icon: "minecraft:end_portal_frame",
+		dim: 1
+	}],
+	rewards: [{
+		uid: "5b245f8f",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:totem_of_undying"
+		}
+	}]
+}

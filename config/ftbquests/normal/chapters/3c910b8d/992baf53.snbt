@@ -1,0 +1,27 @@
+{
+	title: "Besseres Crafting",
+	x: 1.0d,
+	y: -5.0d,
+	description: "Stelle eine Crafting Station her",
+	text: [
+		"Items bleiben beim Verlassen des Craftingmenüs in der Crafting Station gespeichert"
+	],
+	dependencies: [
+		"60191a39"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d982f6bf",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b820a899",
+		type: "item",
+		item: "tconstruct:pattern",
+		count: 8
+	}]
+}

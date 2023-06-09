@@ -1,0 +1,27 @@
+{
+	title: "I'm moving to the Nether",
+	x: 4.0d,
+	y: 0.0d,
+	description: "Betritt den Nether",
+	text: [
+		"Baue dir ein Portal und betritt den Nether"
+	],
+	dependencies: [
+		"5da9800a"
+	],
+	tasks: [{
+		uid: "fccb82c8",
+		type: "dimension",
+		dim: -1
+	}],
+	rewards: [{
+		uid: "f6062e94",
+		type: "item",
+		item: {
+			id: "minecraft:potion",
+			tag: {
+				Potion: "minecraft:long_fire_resistance"
+			}
+		}
+	}]
+}

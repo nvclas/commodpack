@@ -1,0 +1,58 @@
+{
+	title: "Maximaler Platz",
+	x: 7.0d,
+	y: 5.0d,
+	shape: "hexagon",
+	description: "Stelle einen Diamond Backpack her",
+	text: [
+		"Stelle dir den besten Rucksack her, um deinen Inventarplatz zu maximieren"
+	],
+	dependencies: [
+		"0a71776c",
+		"345a7d19"
+	],
+	hide: true,
+	or_tasks: true,
+	tasks: [{
+		uid: "300c0e8e",
+		type: "item",
+		title: "Diamond Backpack",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ironbackpacks:backpack",
+			tag: {
+				packInfo: {
+					upgrade: [],
+					type: "ironbackpacks:diamond",
+					spec: "STORAGE"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ironbackpacks:backpack",
+			tag: {
+				packInfo: {
+					upgrade: [],
+					type: "ironbackpacks:diamond",
+					spec: "UPGRADE"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4fb2ae22",
+		type: "item",
+		item: {
+			id: "ironbackpacks:upgrade",
+			tag: {
+				upgrade: "ironbackpacks:everlasting"
+			}
+		}
+	}]
+}

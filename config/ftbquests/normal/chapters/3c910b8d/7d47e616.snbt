@@ -1,0 +1,83 @@
+{
+	title: "Feierabend",
+	x: 9.0d,
+	y: -5.0d,
+	description: "Vollende deine Spitzhacke",
+	text: [
+		"Stelle an der Tool Station mithilfe deiner Materialien eine Spitzhacke her.",
+		"Du kannst sie in der Tool Station mithilfe von bestimmten Ressourcen modifizieren und ihre Werte verbessern"
+	],
+	dependencies: [
+		"1ddad8fa"
+	],
+	tasks: [{
+		uid: "93d2793b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tconstruct:pickaxe",
+			tag: {
+				StatsOriginal: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 5.0f,
+					FreeModifiers: 3,
+					Durability: 54,
+					HarvestLevel: 1,
+					Attack: 2.9f
+				},
+				Stats: {
+					AttackSpeedMultiplier: 1.0f,
+					MiningSpeed: 5.0f,
+					FreeModifiers: 3,
+					Durability: 54,
+					HarvestLevel: 1,
+					Attack: 2.9f
+				},
+				Special: {
+					Categories: [
+						"aoe",
+						"harvest",
+						"tool"
+					]
+				},
+				TinkerData: {
+					Materials: [
+						"flint",
+						"flint",
+						"flint"
+					],
+					Modifiers: [
+						"toolleveling"
+					]
+				},
+				Modifiers: [{
+					identifier: "crude",
+					color: -9868951,
+					level: 3,
+					crude1: 1b,
+					crude2: 1b
+				},
+				{
+					identifier: "toolleveling",
+					color: 16777215,
+					level: 1
+				}],
+				Traits: [
+					"crude1",
+					"crude2",
+					"toolleveling"
+				]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4b4d637d",
+		type: "item",
+		item: "minecraft:redstone",
+		count: 8
+	}]
+}

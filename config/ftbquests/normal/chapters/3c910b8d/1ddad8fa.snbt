@@ -1,0 +1,75 @@
+{
+	title: "Drei für Eins",
+	x: 7.0d,
+	y: -5.0d,
+	description: "Stelle Teile für eine Spitzhacke her",
+	text: [
+		"Stelle einen Pickaxe Head, ein Binding und eine Tool Rod für deine neue Spitzhacke her"
+	],
+	dependencies: [
+		"df3d0009"
+	],
+	tasks: [{
+		uid: "7f9fd5b8",
+		type: "item",
+		title: "Pickaxe Head",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "partPickHead",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any partPickHead"
+				}
+			}
+		}]
+	},
+	{
+		uid: "182cfa71",
+		type: "item",
+		title: "Binding",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "partBinding",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any partBinding"
+				}
+			}
+		}]
+	},
+	{
+		uid: "bfea6059",
+		type: "item",
+		title: "Tool Rod",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "partToolRod",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any partToolRod"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "92b92d19",
+		type: "item",
+		item: "minecraft:redstone",
+		count: 3
+	}]
+}

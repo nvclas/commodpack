@@ -1,0 +1,36 @@
+{
+	title: "Mehr Platz",
+	x: 1.0d,
+	y: 5.0d,
+	description: "Stelle einen Backpack her",
+	text: [
+		"Stelle dir deinen ersten Rucksack für mehr Platz im Inventar her"
+	],
+	dependencies: [
+		"60191a39"
+	],
+	hide: true,
+	tasks: [{
+		uid: "121729e0",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ironbackpacks:backpack",
+			tag: {
+				packInfo: {
+					upgrade: [],
+					type: "ironbackpacks:basic",
+					spec: "NONE"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c95b45dc",
+		type: "item",
+		item: "ironbackpacks:upgrade"
+	}]
+}

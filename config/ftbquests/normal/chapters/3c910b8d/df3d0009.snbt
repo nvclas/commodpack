@@ -1,0 +1,48 @@
+{
+	title: "Die Arbeit beginnt",
+	x: 5.0d,
+	y: -5.0d,
+	description: "Stelle Schablonen für eine Spitzhacke her",
+	text: [
+		"Benutze den Stencil Table, um die angegebenen Schablonen herzustellen"
+	],
+	dependencies: [
+		"705dc683"
+	],
+	tasks: [{
+		uid: "6139cfef",
+		type: "item",
+		items: [{
+			id: "tconstruct:pattern",
+			tag: {
+				PartType: "tconstruct:pick_head"
+			}
+		}]
+	},
+	{
+		uid: "3aa70410",
+		type: "item",
+		items: [{
+			id: "tconstruct:pattern",
+			tag: {
+				PartType: "tconstruct:binding"
+			}
+		}]
+	},
+	{
+		uid: "fe70e82d",
+		type: "item",
+		items: [{
+			id: "tconstruct:pattern",
+			tag: {
+				PartType: "tconstruct:tool_rod"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "4f42afbd",
+		type: "item",
+		item: "minecraft:flint",
+		count: 4
+	}]
+}

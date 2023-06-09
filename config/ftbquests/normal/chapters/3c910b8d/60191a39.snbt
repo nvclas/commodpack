@@ -1,0 +1,36 @@
+{
+	title: "Erster Schritt",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "circle",
+	description: "Sammle etwas Holz",
+	text: [
+		"Baue einen beliebigen Baum ab und sammle so etwas Holz"
+	],
+	tasks: [{
+		uid: "c5da3251",
+		type: "item",
+		title: "Log",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "logWood",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any logWood"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "20594812",
+		type: "item",
+		item: "minecraft:cobblestone",
+		count: 16,
+		only_one: true
+	}]
+}

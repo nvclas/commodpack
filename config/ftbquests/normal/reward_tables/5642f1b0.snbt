@@ -1,0 +1,13 @@
+{
+	title: "Ender Dragon",
+	loot_size: 1,
+	rewards: [{
+		xp: 1000,
+		type: "xp"
+	},
+	{
+		xp: 750,
+		type: "xp",
+		weight: 2
+	}]
+}

@@ -1,0 +1,54 @@
+{
+	title: "Projekt Smeltery",
+	x: 11.0d,
+	y: -5.0d,
+	description: "Baue eine Smeltery",
+	text: [
+		"Die Smeltery ist ein Konstrukt aus mehreren Blöcken und ermöglicht das Schmelzen und Gießen von Materialien"
+	],
+	dependencies: [
+		"7d47e616"
+	],
+	tasks: [{
+		uid: "8b7abdc8",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared 1 3"
+		}],
+		count: 19L
+	},
+	{
+		uid: "f3ca3d4d",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	},
+	{
+		uid: "4b84afd8",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_tank"
+		}]
+	}],
+	rewards: [{
+		uid: "a2b6f70f",
+		type: "item",
+		item: "tconstruct:seared_tank 1 2"
+	},
+	{
+		uid: "2d173766",
+		type: "item",
+		item: "tconstruct:faucet"
+	},
+	{
+		uid: "b449b9e5",
+		type: "item",
+		item: "tconstruct:casting"
+	},
+	{
+		uid: "c16de5c7",
+		type: "item",
+		item: "tconstruct:smeltery_io"
+	}]
+}

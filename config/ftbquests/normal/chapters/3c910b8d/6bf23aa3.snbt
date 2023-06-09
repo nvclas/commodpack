@@ -1,0 +1,56 @@
+{
+	title: "Noch mehr Platz",
+	x: 3.0d,
+	y: 5.0d,
+	description: "Stelle einen Iron Backpack her",
+	text: [
+		"Stelle dir den nächstbesten Rucksack her, um dein Inventar noch weiter zu vergrößern. Du hast die Wahl zwischen mehr Upgrades und mehr Platz"
+	],
+	dependencies: [
+		"0a71776c"
+	],
+	hide: true,
+	or_tasks: true,
+	tasks: [{
+		uid: "c20e9f7b",
+		type: "item",
+		title: "Iron Backpack",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ironbackpacks:backpack",
+			tag: {
+				packInfo: {
+					upgrade: [],
+					type: "ironbackpacks:iron",
+					spec: "STORAGE"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ironbackpacks:backpack",
+			tag: {
+				packInfo: {
+					upgrade: [],
+					type: "ironbackpacks:iron",
+					spec: "UPGRADE"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c3a07455",
+		type: "item",
+		item: {
+			id: "ironbackpacks:upgrade",
+			tag: {
+				upgrade: "ironbackpacks:damage_bar"
+			}
+		}
+	}]
+}

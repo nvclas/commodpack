@@ -1,0 +1,59 @@
+{
+	title: "Tüfteln und Werkeln",
+	x: 3.0d,
+	y: -5.0d,
+	description: "Richte deinen Arbeitsplatz ein",
+	text: [
+		"Stelle einen Part Builder, einen Stencil Table und eine Tool Station her, um Werkzeuge und Waffen zu konstruieren"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"60191a39"
+	],
+	hide: true,
+	tasks: [{
+		uid: "033c3e91",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "76d6c954",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "minecraft:planks",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bca6a9d3",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 3"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d7870644",
+		type: "item",
+		item: "tconstruct:tooltables 1 4"
+	}]
+}

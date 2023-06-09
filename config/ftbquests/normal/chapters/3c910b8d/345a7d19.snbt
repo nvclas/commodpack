@@ -1,0 +1,57 @@
+{
+	title: "Viel mehr Platz",
+	x: 5.0d,
+	y: 5.0d,
+	description: "Stelle einen Gold Backpack her",
+	text: [
+		"Stelle einen Gold Backpack her, um dein Inventar noch weiter zu vergrößern"
+	],
+	dependencies: [
+		"6bf23aa3",
+		"0a71776c"
+	],
+	hide: true,
+	or_tasks: true,
+	tasks: [{
+		uid: "55dee75e",
+		type: "item",
+		title: "Gold Backpack",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ironbackpacks:backpack",
+			tag: {
+				packInfo: {
+					upgrade: [],
+					type: "ironbackpacks:gold",
+					spec: "STORAGE"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ironbackpacks:backpack",
+			tag: {
+				packInfo: {
+					upgrade: [],
+					type: "ironbackpacks:gold",
+					spec: "UPGRADE"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c9aac41e",
+		type: "item",
+		item: {
+			id: "ironbackpacks:upgrade",
+			tag: {
+				upgrade: "ironbackpacks:lock"
+			}
+		}
+	}]
+}
